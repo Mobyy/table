@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script
+          src="https://kit.fontawesome.com/bbc37fc7fc.js"
+          crossorigin="anonymous"
+        ></script>
+        <title>proposals</title>
+    </head>
+    <body>
+        <div class="header-big d-none d-lg-block d-xl-block">
+            <div class="container-fluid nav-bar border-bottom align-middle ">
+                <div class="row">
+                    <div class="pt-3 col-xl-6 col-lg-3 col-md-3 col-sm-4 col-6 nav-bar1" >
+                        <p class="greet-doc">Hello, Doctor!</p>
+                    </div>
+                    <div class="pt-3 col-xl-6 col-lg-9 col-md-9 col-sm-8 col-6 align-items-center nav-bar2">
+                        <img src="img/chat-doctor.png" alt="">
+                        <img src="img/notification.png" alt="">
+                        <img src="img/question-mark-doctor.png" alt="">
+                        <img src="img/settings-doctor.png" alt="">
+                        <button type="submit" class="btn" id="logout-btn"><img src="img/logout.png" alt="" style="padding-right: 10px;">LOGOUT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table-big container-fluid d-none d-lg-block d-xl-block">
+            <div class="row">
+                <div class="container-fluid proposal">
+                    <div class="pl-0 col-xl-12">
+                        <p>Proposals</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3">
+                    <div class="input-container">
+                        <img src="img/loupe.png" alt="" style="position: absolute !important; top: 9px; left: 26px">
+                        <input type="text" class="form-control" placeholder="Search by Keywords" id="search">
+                        <button class="btn" type="submit" id="search-btn"><img src="img/Group 924.png" alt="" style="margin-bottom: 10px;"></button>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="input-container btn-big">
+                        <img src="img/filter.png" alt="" id="nav-btn-img">
+                        <form>
+                        <select name="Filter" class="filter-btn">
+                            <option selected>Filter</option>
+                            <option value="In order">Lorem, ipsum.</option>
+                            <option value="Reversed">Lorem, ipsum.</option>
+                        </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="input-container btn-big">
+                        <img src="img/Group 95.png" alt="" id="nav-btn-img">
+                        <form>
+                        <select name="Sort" class="filter-btn">
+                          <option selected>Sort</option>
+                          <option value="In order">Lorem, ipsum.</option>
+                          <option value="Reversed">Lorem, ipsum.</option>
+                        </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="info-table-big">
+                <div class="px-0 container-fluid">
+                    <div class="wrapper" style="border-radius: 8px !important; overflow: hidden;">
+                        <table class="mb-0 table table-bordered table-responsive-xl align-middle overflow-scroll">
+                            <thead style="box-shadow: 3px 3px 5px #00000029;">
+                                <tr>
+                                    <th>Proposal ID</th>
+                                    <th>Procedure Type</th>
+                                    <th>Procedure Name</th>
+                                    <th>Date Created</th>
+                                    <th>Procedure Date</th>
+                                    <th>Price</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>98h023l743y5w</td>
+                                    <td>Cosmetic surgery</td>
+                                <td>Body enhancement with implants</td>
+                                    <td>16.11.2020</td>
+                                    <td>24.04.2021 - 02.05.2021</td>
+                                    <td>2.800 $</td>
+                                    <td><img src="img/orange-dot.png" alt="" style="padding-right: 10px;">Waiting for Response</td>
+                                    <td><a href="url" class="see-detail-btn">See Details<i class="fas fa-arrow-right see-detail-icon"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>h023l743y5w89</td>
+                                    <td>Heart Bypass Surgery</td>
+                                    <td>Et harum quidem rerum</td>
+                                    <td>04.03.2020</td>
+                                    <td>24.04.2021 - 02.05.2021</td>
+                                    <td>5.300 $</td>
+                                    <td><img src="img/red-dot.png" alt="" style="padding-right: 10px;">Rejected</td>
+                                    <td><a href="url" class="see-detail-btn">See Details<i class="fas fa-arrow-right see-detail-icon"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>98h3y5w023l74</td>
+                                    <td>Echocardiogram</td>
+                                    <td>Et harum quidem rerum quidem rerum</td>
+                                    <td>25.02.2020</td>
+                                    <td>24.04.2021 - 02.05.2021</td>
+                                    <td>1.600 $</td>
+                                    <td><img src="img/orange-dot.png" alt="" style="padding-right: 10px;">Draft</td>
+                                    <td><a href="url" class="see-detail-btn">See Details<i class="fas fa-arrow-right see-detail-icon"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>743y5w98h023L</td>
+                                    <td>Hip Replacement Surgery</td>
+                                    <td>Body enhancement with implants</td>
+                                    <td>01.02.2020</td>
+                                    <td>24.04.2021 - 02.05.2021</td>
+                                    <td>12.000 $</td>
+                                    <td><img src="img/blue-dot.png" alt="" style="padding-right: 10px;">Complete</td>
+                                    <td><a href="url" class="see-detail-btn">See Details<i class="fas fa-arrow-right see-detail-icon"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>983y5wh023l74</td>
+                                    <td>Cataract Surgery</td>
+                                    <td>Et harum quidem rerum quidem rerum</td>
+                                    <td>13.02.2020</td>
+                                    <td>24.04.2021 - 02.05.2021</td>
+                                    <td>4.200 $</td>
+                                    <td><img src="img/green-dot.png" alt="" style="padding-right: 10px;">Procedure in progress</td>
+                                    <td><a href="url" class="see-detail-btn">See Details<i class="fas fa-arrow-right see-detail-icon"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table-small d-block d-lg-none d-xl-none" style="background: white;">
+            <div class="row">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-6 pl-5">
+                            <img src="img/MEDvisus-logo.png" alt="" style="padding-top: 15px;">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-6 pr-5" style="text-align: right;">
+                            <button type="submit" class="mt-3 px-0 btn" id="logout-btn"><img src="img/logout.png" alt="" style="padding-right: 5px;">LOGOUT</button>
+                        </div>
+                    </div>  
+                </div>
+                <div class="container-fluid px-5">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-12 py-4">
+                            <div class="proposal">
+                                <div class="px-0 col-xl-12">
+                                    <p>Proposals</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-12 col-md-4 col-sm-12 col-12 pb-3">
+                            <div class="input-container">
+                                <img src="img/loupe.png" alt="" id="nav-btn-img">
+                                <input type="text" class="form-control" placeholder="Search by Keywords" id="search">
+                                <button class="btn" type="submit" id="search-btn"><img src="img/Group 924.png" alt="" style="margin-bottom: 10px;"></button>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-12 col-md-4 col-sm-6 col-6">
+                            <div class="input-container">
+                                <img src="img/filter.png" alt="" id="nav-btn-img">
+                                <form>
+                                <select name="Filter" class="filter-btn">
+                                    <option selected>Filter</option>
+                                    <option value="In order">Lorem, ipsum.</option>
+                                    <option value="Reversed">Lorem, ipsum.</option>
+                                </select>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-12 col-md-4 col-sm-6 col-6">
+                            <div class="input-container">
+                                <img src="img/Group 95.png" alt="" id="nav-btn-img">
+                                <form>
+                                <select name="Sort" class="filter-btn">
+                                  <option selected>Sort</option>
+                                  <option value="In order">Lorem, ipsum.</option>
+                                  <option value="Reversed">Lorem, ipsum.</option>
+                                </select>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row justify-content-center">
+                        <div class="info-table-small-container">
+                            <div class="container-fluid py-3">
+                                <div class="thick-border">
+                                    <table class="mb-0 table table-sm table-bordered info-table-small">
+                                        <tbody>
+                                            <tr>
+                                                <th>Proposal ID</th>
+                                                <td>98h023l743y5w</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Procedure Type</th>
+                                                <td>Cosmetic surgery</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Procedure Name</th>
+                                                <td>Body enhancement with implants</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Date Created</th>
+                                                <td>16.11.2020</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Procedure Date</th>
+                                                <td>24.04.2021 - 02.05.2021</td>
+                                            </tr>
+                                            <tr>    
+                                                <th>Price</th>
+                                                <td>2.800 $</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Status</th>
+                                                <td><img src="img/orange-dot.png" alt="" style="padding-right: 10px;">Waiting for Response</td>
+                                            </tr>
+                                            <tr>
+                                                <th style="height: 20px !important; border-bottom: 0px !important;"></th>
+                                                <td style="height: 20px !important; text-align: right; border-bottom: 0px !important;"><a href="url" class="see-detail-btn">See Details<i class="fas fa-arrow-right see-detail-icon"></i></a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row justify-content-center">
+                        <div class="info-table-small-container">
+                            <div class="container-fluid py-3">
+                                <div class="thick-border">
+                                    <table class="mb-0 table table-sm table-bordered info-table-small">
+                                        <tbody>
+                                            <tr>
+                                                <th>Proposal ID</th>
+                                                <td>h023l743y5w89</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Procedure Type</th>
+                                                <td>Heart Bypass Surgery</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Procedure Name</th>
+                                                <td>Et harum quidem rerum</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Date Created</th>
+                                                <td>04.03.2020</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Procedure Date</th>
+                                                <td>24.04.2021 - 02.05.2021</td>
+                                            </tr>
+                                            <tr>    
+                                                <th>Price</th>
+                                                <td>5.300 $</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Status</th>
+                                                <td><img src="img/red-dot.png" alt="" style="padding-right: 10px;">Rejected</td>
+                                            </tr>
+                                            <tr>
+                                                <th style="height: 20px !important; border-bottom: 0px !important;"></th>
+                                                <td style="height: 20px !important; text-align: right; border-bottom: 0px !important;"><a href="url" class="see-detail-btn">See Details<i class="fas fa-arrow-right see-detail-icon"></i></a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row justify-content-center">
+                        <div class="info-table-small-container">
+                            <div class="container-fluid py-3">
+                                <div class="thick-border">
+                                    <table class="mb-0 table table-sm table-bordered info-table-small">
+                                        <tbody>
+                                            <tr>
+                                                <th>Proposal ID</th>
+                                                <td>98h3y5w023l74</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Procedure Type</th>
+                                                <td>Echocardiogram</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Procedure Name</th>
+                                                <td>Et harum quidem rerum quidem rerum</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Date Created</th>
+                                                <td>25.02.2020</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Procedure Date</th>
+                                                <td>24.04.2021 - 02.05.2021</td>
+                                            </tr>
+                                            <tr>    
+                                                <th>Price</th>
+                                                <td>1.600 $</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Status</th>
+                                                <td><img src="img/orange-dot.png" alt="" style="padding-right: 10px;">Draft</td>
+                                            </tr>
+                                            <tr>
+                                                <th style="height: 20px !important; border-bottom: 0px !important;"></th>
+                                                <td style="height: 20px !important; text-align: right; border-bottom: 0px !important;"><a href="url" class="see-detail-btn">See Details<i class="fas fa-arrow-right see-detail-icon"></i></a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row justify-content-center">
+                        <div class="info-table-small-container">
+                            <div class="container-fluid py-3">
+                                <div class="thick-border">
+                                    <table class="mb-0 table table-sm table-bordered info-table-small">
+                                        <tbody>
+                                            <tr>
+                                                <th>Proposal ID</th>
+                                                <td>743y5w98h023L</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Procedure Type</th>
+                                                <td>Hip Replacement Surgery</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Procedure Name</th>
+                                                <td>Body enhancement with implants</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Date Created</th>
+                                                <td>01.02.2020</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Procedure Date</th>
+                                                <td>24.04.2021 - 02.05.2021</td>
+                                            </tr>
+                                            <tr>    
+                                                <th>Price</th>
+                                                <td>01.02.2020</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Status</th>
+                                                <td><img src="img/blue-dot.png" alt="" style="padding-right: 10px;">Complete</td>
+                                            </tr>
+                                            <tr>
+                                                <th style="height: 20px !important; border-bottom: 0px !important;"></th>
+                                                <td style="height: 20px !important; text-align: right; border-bottom: 0px !important;"><a href="url" class="see-detail-btn">See Details<i class="fas fa-arrow-right see-detail-icon"></i></a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row justify-content-center">
+                        <div class="info-table-small-container">
+                            <div class="container-fluid py-3">
+                                <div class="thick-border">
+                                    <table class="mb-0 table table-sm table-bordered info-table-small">
+                                        <tbody>
+                                            <tr>
+                                                <th>Proposal ID</th>
+                                                <td>983y5wh023l74</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Procedure Type</th>
+                                                <td>Cataract Surgery</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Procedure Name</th>
+                                                <td>Et harum quidem rerum quidem rerum</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Date Created</th>
+                                                <td>13.02.2020</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Procedure Date</th>
+                                                <td>24.04.2021 - 02.05.2021</td>
+                                            </tr>
+                                            <tr>    
+                                                <th>Price</th>
+                                                <td>13.02.2020</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Status</th>
+                                                <td><img src="img/green-dot.png" alt="" style="padding-right: 10px;">Procedure in progress</td>
+                                            </tr>
+                                            <tr>
+                                                <th style="height: 20px !important; border-bottom: 0px !important;"></th>
+                                                <td style="height: 20px !important; text-align: right; border-bottom: 0px !important;"><a href="url" class="see-detail-btn">See Details<i class="fas fa-arrow-right see-detail-icon"></i></a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </div>
+    </body>
+</html>
